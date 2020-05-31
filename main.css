@@ -1,0 +1,261 @@
+body{
+    font-family: Helvetica;
+    overflow-x: auto;
+    overflow-y: auto;
+    margin: 0;
+    background: black;
+    color: #00FDCD;
+}
+
+/*scroll bar*/
+section{
+	width: 100%;
+	height: 100vh;
+}
+::-webkit-scrollbar
+{
+	width: 6px;
+}
+::-webkit-scrollbar-thumb
+{
+	background: linear-gradient(#656565, white);
+	border-radius: 6px;
+}
+
+span{
+    color: #1F6FFB;
+}
+
+.main-header{
+    padding-top: 5px;
+}
+
+.main-header h1{
+    position: relative;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+header{
+    background: #84F7D7; /*#8150FF;*/
+    color: black;
+    height: 60px;
+    width: 100%;
+}
+
+header nav{
+    position: relative;
+    text-align: right;
+    top: 17px;
+}
+
+header nav ul li{
+    position: relative;
+    display: inline;
+    right: 10px;
+    bottom: 60px;
+    margin: 10px;
+    font-size: 17px;
+}
+
+header nav ul li a:hover{
+    color: #1F6FFB;
+    -webkit-transition: color 0.5s;
+    -moz-transition:    color 0.5s;
+    -ms-transition:     color 0.5s;
+    -o-transition:      color 0.5s;
+    transition:         color 0.5s;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+p{
+    color: #F5FF14;
+}
+
+.Index-Title{
+    color: white;
+}
+
+.container {
+	max-width: 100%;
+	width: 800px;
+	height: 28px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+	margin-top: 10px;
+}
+
+.Project-Title-Parent{
+    text-align: center;
+}
+
+.Project-Title{
+    display:inline-block;
+    height:20px;
+    background-color:#00FDCD;
+    color:black;
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.Project-Image{ 
+    display: block;
+    max-width: 50%;
+    margin: 10px auto;
+}
+
+.Blurred:hover img{
+    box-shadow: 0 0 0 4px rgb(224, 224, 224);
+}
+
+.Blurred :not(img){
+    width: 100%;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.Blurred h3{
+    display: flex;
+    justify-content: center;
+}
+
+.Blurred:hover :not(img){
+    opacity: 1;
+}
+
+/*About CSS starts here */
+.About{
+    color: white;
+}
+
+.About h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.About img{
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.Information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #00FDCD;
+}
+
+.Information h2{
+    text-align: center;
+}
+
+.Education{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Education h2{
+    color: #F2066E;
+}
+
+
+.IS h2{
+    color: #CE03FB;
+}
+
+.Life h2{
+    color: yellow;
+}
+
+.Coursework h2{
+    color: #00d9ff; 
+}
+
+.social-menu{
+	bottom: 6%;
+	right: 49%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding-top: 120px;
+}
+.button {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 10px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	overflow: hidden;
+	position: relative;
+	color: black;
+	right: 1%;
+}
+
+.button i{
+	line-height: 50px;
+	font-size: 25px;
+	transition: 0.2s linear;
+}
+
+.button:hover {
+	background: purple;
+}
+
+.button:hover i{
+	transform: scale(1.2);
+}
+
+
+.button2 {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: white;
+	margin: 10px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	overflow: hidden;
+	position: relative;
+    color: black;
+    right: 1%;
+}
+
+.button2 i{
+	line-height: 50px;
+	font-size: 25px;
+	transition: 0.2s linear;
+}
+
+.button2:hover {
+	background: #007bb6;
+}
+
+.button2:hover i{
+	transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 1230px){
+    .Information{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #00FDCD;
+    }
+
+}
